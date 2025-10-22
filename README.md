@@ -1,26 +1,29 @@
 # 🧬 Sequencing Coverage Calculator
 
-A simple and efficient **Python tool** for calculating genome sequencing coverage for paired-end Illumina reads.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Last Updated](https://img.shields.io/github/last-commit/mtariqi/calculate_coverage?color=yellow)
+![Repo Size](https://img.shields.io/github/repo-size/mtariqi/calculate_coverage?color=lightgrey)
+
+A simple and efficient **Python tool** for calculating **genome sequencing coverage** for paired-end Illumina reads.
 
 ---
 
 ## 📘 Overview
 
-This project helps compute the **sequencing coverage (depth)** based on:
-- Number of read pairs  
-- Read length (in base pairs)  
-- Genome size (in base pairs)
+This project computes **sequencing coverage (depth)** based on:
 
-This is useful for **planning sequencing experiments** or **validating yield** in genomics research.
+- 🧪 **Number of read pairs**
+- 🧬 **Read length** (in base pairs)
+- 🧫 **Genome size** (in base pairs)
 
-**Formula:**
+This tool is useful for **planning sequencing experiments** or **validating yield** in genomics research.
 
-\[
-\text{Coverage (X)} = \frac{2 \times \text{num_pairs} \times \text{read_length}}{\text{genome_size}}
-\]
+### 🧮 Formula
+
+:** Coverage (X) = (2 × num_pairs × read_length) / genome_size
 
 ---
-
 ## 🚀 Usage
 
 ### 1️⃣ Clone the repository
@@ -28,23 +31,43 @@ This is useful for **planning sequencing experiments** or **validating yield** i
 git clone https://github.com/mtariqi/calculate_coverage.git
 cd calculate_coverage
 
-### 2️⃣ Run the script
+2️⃣ Run the script
 
 python3 coverage_calculator.py
 
 
-### 3️⃣ Example output.
+3️⃣ Example output.
 Expected coverage: 600.0x
 
-### 🧪 Testing
+🧪 Testing
 
 You can verify the calculation using the included test file:
 
 python3 test_coverage_calculator.py
 
-### ⚙️ Function Reference
+⚙️ Function Reference
 
 calculate_coverage(num_pairs, read_length, genome_size)
+
+Returns:
+
+Float — expected sequencing coverage (X)
+
+💡 Example (Yeast Genome)
+
+from coverage_calculator import calculate_coverage
+
+coverage = calculate_coverage(
+    num_pairs=10_000_000,
+    read_length=150,
+    genome_size=5_000_000
+)
+print(f"Expected coverage: {coverage:.1f}x")
+
+Output:
+
+Expected coverage: 600.0x
+
 
 ### Parameters:
 
