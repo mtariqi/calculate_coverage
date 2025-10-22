@@ -102,4 +102,12 @@ print(f"Expected coverage: {coverage:.1f}x")
 
 Expected coverage: 600.0x
 
+# 🧾 License
 
+This project is released under the MIT License.
+
+# ✨ Author
+
+Md Tariqul Islam (Tariq)
+📍 Toronto, Canada
+🔗 GitHub: mtariqi
