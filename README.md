@@ -28,25 +28,25 @@ This is useful for **planning sequencing experiments** or **validating yield** i
 git clone https://github.com/mtariqi/calculate_coverage.git
 cd calculate_coverage
 
-## 2️⃣ Run the script
+### 2️⃣ Run the script
 
 python3 coverage_calculator.py
 
 
-## 3️⃣ Example output.
+### 3️⃣ Example output.
 Expected coverage: 600.0x
 
-## 🧪 Testing
+### 🧪 Testing
 
 You can verify the calculation using the included test file:
 
 python3 test_coverage_calculator.py
 
-## ⚙️ Function Reference
+### ⚙️ Function Reference
 
 calculate_coverage(num_pairs, read_length, genome_size)
 
-## Parameters:
+### Parameters:
 
 -- num_pairs (int): Number of paired-end reads
 
@@ -58,11 +58,11 @@ Returns:
 
 -- Sequencing coverage (float)
 
-## License
+### License
 
 This project is released under the MIT License.
 
-## ✨ Example (Yeast Genome)
+### ✨ Example (Yeast Genome)
 
 
 from coverage_calculator import calculate_coverage
