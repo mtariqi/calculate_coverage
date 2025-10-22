@@ -31,11 +31,12 @@ This tool is useful for **planning sequencing experiments** or **validating yiel
 git clone https://github.com/mtariqi/calculate_coverage.git
 cd calculate_coverage
 
+---
 2️⃣ Run the script
 
 python3 coverage_calculator.py
 
-
+---
 3️⃣ Example output.
 Expected coverage: 600.0x
 
@@ -45,6 +46,7 @@ You can verify the calculation using the included test file:
 
 python3 test_coverage_calculator.py
 
+---
 ⚙️ Function Reference
 
 calculate_coverage(num_pairs, read_length, genome_size)
@@ -82,6 +84,7 @@ Returns:
 -- Sequencing coverage (float)
 
 
+---
 ### ✨ Example (Yeast Genome)
 
 
@@ -99,10 +102,12 @@ print(f"Expected coverage: {coverage:.1f}x")
 
 Expected coverage: 600.0x
 
+---
 # 🧾 License
 
 This project is released under the MIT License.
 
+---
 # ✨ Author
 
 Md Tariqul Islam (Tariq)
