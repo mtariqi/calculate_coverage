@@ -81,9 +81,6 @@ Returns:
 
 -- Sequencing coverage (float)
 
-### License
-
-This project is released under the MIT License.
 
 ### ✨ Example (Yeast Genome)
 
